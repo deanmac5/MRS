@@ -14,6 +14,9 @@
 		052B7F061BB0D42E0000E0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052B7F041BB0D42E0000E0E3 /* LaunchScreen.storyboard */; };
 		052B7F111BB0D42F0000E0E3 /* MRS_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052B7F101BB0D42F0000E0E3 /* MRS_iOSTests.swift */; };
 		052B7F1C1BB0D42F0000E0E3 /* MRS_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052B7F1B1BB0D42F0000E0E3 /* MRS_iOSUITests.swift */; };
+		057169D11BB111610070CE8D /* ReleaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057169D01BB111610070CE8D /* ReleaseTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		057169D31BB116110070CE8D /* MediaRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057169D21BB116110070CE8D /* MediaRelease.swift */; settings = {ASSET_TAGS = (); }; };
+		057169D51BB120AC0070CE8D /* MediaReleaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057169D41BB120AC0070CE8D /* MediaReleaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		052B7F171BB0D42F0000E0E3 /* MRS-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MRS-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		052B7F1B1BB0D42F0000E0E3 /* MRS_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRS_iOSUITests.swift; sourceTree = "<group>"; };
 		052B7F1D1BB0D42F0000E0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		057169D01BB111610070CE8D /* ReleaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseTableViewCell.swift; sourceTree = "<group>"; };
+		057169D21BB116110070CE8D /* MediaRelease.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaRelease.swift; sourceTree = "<group>"; };
+		057169D41BB120AC0070CE8D /* MediaReleaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaReleaseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				052B7EFB1BB0D42E0000E0E3 /* AppDelegate.swift */,
 				052B7EFD1BB0D42E0000E0E3 /* ViewController.swift */,
 				052B7EFF1BB0D42E0000E0E3 /* Main.storyboard */,
+				057169D21BB116110070CE8D /* MediaRelease.swift */,
+				057169D01BB111610070CE8D /* ReleaseTableViewCell.swift */,
+				057169D41BB120AC0070CE8D /* MediaReleaseTableViewController.swift */,
 				052B7F021BB0D42E0000E0E3 /* Assets.xcassets */,
 				052B7F041BB0D42E0000E0E3 /* LaunchScreen.storyboard */,
 				052B7F071BB0D42E0000E0E3 /* Info.plist */,
@@ -256,7 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				052B7EFE1BB0D42E0000E0E3 /* ViewController.swift in Sources */,
+				057169D51BB120AC0070CE8D /* MediaReleaseTableViewController.swift in Sources */,
 				052B7EFC1BB0D42E0000E0E3 /* AppDelegate.swift in Sources */,
+				057169D31BB116110070CE8D /* MediaRelease.swift in Sources */,
+				057169D11BB111610070CE8D /* ReleaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.gov.finance.MRS-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -413,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.gov.finance.MRS-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -483,6 +497,7 @@
 				052B7F221BB0D42F0000E0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		052B7F231BB0D42F0000E0E3 /* Build configuration list for PBXNativeTarget "MRS-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +506,7 @@
 				052B7F251BB0D42F0000E0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		052B7F261BB0D42F0000E0E3 /* Build configuration list for PBXNativeTarget "MRS-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +515,7 @@
 				052B7F281BB0D42F0000E0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

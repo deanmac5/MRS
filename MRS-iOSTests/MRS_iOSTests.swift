@@ -21,16 +21,17 @@ class MRS_iOSTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+   // MARK: MRS Tests
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    // Test to confirm that the MediaRelease initialiser returns when no title, snippet or url are provided
+    func testMediaReleaseInitialisation(){
+        // Success case
+        let potential = MediaRelease(title: "Sample Release", snippet: "Good old Collingwood forever, we know how to play the game", url: "http://www.collingwoodfc.com.au")
+        XCTAssertNotNil(potential)
+        
+        // Fail case
+        let fail = MediaRelease(title: "", snippet: "", url: "")
+        XCTAssertNil(fail, "Empty name is invalid" )
     }
     
 }
